@@ -1,0 +1,113 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 99vh;
+    background: #032c56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    padding: 50px 30px;
+    width: 420px;
+    background: #d8d8d8;
+    border-radius: 10px;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.06),
+                -6px -6px 16px rgba(255, 255, 255, 0.4);
+
+}
+
+.display{
+    background: #809c65;
+    border-radius: 6px;
+    padding: 25px 15px;
+    margin-bottom: 50px;
+    box-shadow: inset 6px 6px 16px rgba(47, 47, 47, 0.06),
+                inset -6px -6px 16px rgba(113, 113, 133, 0.04);
+}
+
+.display input{
+    background: transparent;
+    border: none;
+    color: #282828;
+    font-size: 1.5rem;
+    text-align: end;
+    width: 100%;
+}
+
+.display input:hover,
+.display input:active:focus,
+.display input:focus{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #282828;
+    text-align: end;
+    width: 100%;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+button{
+    background: #dfdfdf;
+    border: none;
+    border-radius: 6px;
+    color: #6a6868;
+    font-size: 1.5rem;
+    outline: none;
+    height: 8vh;
+    box-shadow: 6px 6px 16px rgba(30, 30, 30, 0.06),
+                -6pxx -6px 16px rgba(107, 107, 107, 0.4);
+    cursor: pointer;
+}
+
+button:hover{
+    background: #d2d2d2;
+    color: #333333;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+}
+
+button:active{
+    box-shadow: inset 4px 4px 8px rgba(53, 53, 53, 0.1),
+                inset -4px -4px 8px rgba(99, 99, 99, 0.3);
+}
+
+button:active:hover{
+    background: #d9d9d9;
+    color: #333333;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccca30;
+    box-shadow: 1px 1px 12px #ccca30;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-out;
+}
+
+.cursor.mousedown {
+    transform: scale(1.2);
+    background-color: #c1bf5d;
+}
+
+/*  */

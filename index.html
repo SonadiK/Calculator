@@ -1,3 +1,8 @@
+<!-- 
+    Author: Sonadi Kannangara
+      Date: 15th Jan, 2023
+      Desc: This is a calculator coded using HTML, CSS and JavaScript 
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,12 +15,13 @@
 </head>
 
 <body>
-
+<!-- Create a container for the calculator -->
     <div class="calculator">
         <div class="display">
             <input type="text" class="input_section" id="input" placeholder="0">
         </div>
         <div class="buttons">
+            <!-- Create buttons for the calculator -->
             <button onclick="clearInput()">AC</button>
             <button onclick="backspace()">clear</button>
             <button onclick="inputNum('%')">%</button>
@@ -38,7 +44,7 @@
             <button onclick="calculate()">=</button>
         </div>
     </div>
-
+<!-- Link the JavaScript file for the calculator -->
     <script src="./main.js"></script>
 
 </body>
